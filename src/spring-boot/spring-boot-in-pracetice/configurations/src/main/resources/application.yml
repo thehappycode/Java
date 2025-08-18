@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: configurations
+  profiles:
+    active: dev
+  config:
+    import:
+      dbConfig.yml
+
+server:
+  port: 8989
+
+custom:
+  properties:
+    name: CourseTracker
+    ip: 127.0.0.1
+    port: 9090
+    security:
+      enabled: true
+      token: asddf998hhyqthgtYYtggghg9908jjh7ttr
+      roles: USER,ADMIN

@@ -1,0 +1,5 @@
+database:
+  # userName: ${POC_DB_USERNAME} # OS Environment Variable
+  # password: ${POC_DB_PASSWORD} # OS Environment Variable
+  userName: tamnt4
+  password: Abcd@1234
