@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: logging
+
+server:
+  port: 8989
+
+# Cấu hình logging
+#logging:
+#  pattern:
+#    # console: "%clr(%d{${LOG_DATEFORMAT_PATTERN:yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
+#    console: "%clr(%d{dd-MM-yyyy HH:mm:ss.SSS}){yellow} %clr(${PID:- }){green} %magenta([%thread]) %highlight([%-5level]) %clr(%-40.40logger{39}){cyan} %msg%n"
+#  file: # Trong Spring Boot chỉ cấu hình sử dụng 1 trong 2 loại name hoặc path. Nếu cấu hình cả hai thì Spring Boot sẽ ưu tiên sử dụng name.
+#    name: "/Users/thehappycode/Documents/Programming/Java/src/spring-boot/spring-boot-in-pracetice/logging/src/main/java/com/thehappycode/logging/logs/application.log"
+#    # path: "/Users/thehappycode/Documents/Programming/Java/src/spring-boot/spring-boot-in-pracetice/logging/src/main/java/com/thehappycode/logging/logs"
+
+
+
