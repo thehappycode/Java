@@ -12,7 +12,7 @@
 	<artifactId>h2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>crud</name>
-	<description>Tìm hiểu về CrudRepository trong Spring Boot </description>
+	<description>Tìm hiểu về Spring Data trong Spring Boot </description>
 	<url/>
 	<licenses>
 		<license/>
