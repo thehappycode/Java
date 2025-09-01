@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.thehappycode</groupId>
-	<artifactId>h2</artifactId>
+	<artifactId>crud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>crud</name>
 	<description>Tìm hiểu về CrudRepository trong Spring Boot </description>

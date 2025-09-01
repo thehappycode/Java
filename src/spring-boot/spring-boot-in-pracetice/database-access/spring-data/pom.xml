@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.thehappycode</groupId>
-	<artifactId>h2</artifactId>
+	<artifactId>spring-data</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>crud</name>
+	<name>spring-data</name>
 	<description>Tìm hiểu về Spring Data trong Spring Boot </description>
 	<url/>
 	<licenses>

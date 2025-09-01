@@ -16,7 +16,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      dll-auto: none # Không hibernate tự động tạo schema/table từ entity. Các giá trị khác: create, update, validate, create-drop.
+      ddl-auto: none # Không hibernate tự động tạo schema/table từ entity. Các giá trị khác: create, update, validate, create-drop.
 
 
   sql:
