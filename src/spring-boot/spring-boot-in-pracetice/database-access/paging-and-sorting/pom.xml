@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.thehappycode</groupId>
-	<artifactId>crud</artifactId>
+	<artifactId>paging-and-sorting</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>crud</name>
-	<description>Tìm hiểu về CrudRepository trong Spring Boot </description>
+	<name>paging-and-sorting</name>
+	<description>Tìm hiểu về Paging và Sorting Repository trong Spring Boot </description>
 	<url/>
 	<licenses>
 		<license/>

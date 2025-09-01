@@ -1,12 +1,13 @@
 spring:
   application:
-    name: h2
+    name: paging-and-sorting
 
   datasource:
     url: jdbc:h2:mem:h2db;DB_CLOSE_DELAY=-1 # Kết nối đến H2, DB_CLOSE_DELAY=-1 giữ cho database còn tồn tại đến khi JVM tắt, tránh việc H2 tự động đóng khi không còn kết nối.
     driver-class-name: org.h2.Driver
     username: sa
     password:
+    initialization-mode: always
 
   h2:
     console:
@@ -19,13 +20,13 @@ spring:
       ddl-auto: none # Không hibernate tự động tạo schema/table từ entity. Các giá trị khác: create, update, validate, create-drop.
 
 
-  sql:
-    init:
-      mode: always # Luôn chạy script khi start ứng dụng. Các giá trị khác embedded, never.
+  # sql:
+  #   init:
+  #     mode: always # Luôn chạy script khi start ứng dụng. Các giá trị khác embedded, never.
 
       # Trường hợp file schema.sql, data.sql được khai báo trong thư mực /resources thì không cần khai báo 2 cấu hình bên dưới.
-      schema-locations: classpath:/scripts/schema.sql # Chỉ định path chứa file schema.sql.
-      data-locations: classpath:/scripts/data.sql # chỉ định path chưa file data.sql.
+      # schema-locations: classpath:/scripts/schema.sql # Chỉ định path chứa file schema.sql.
+      # data-locations: classpath:/scripts/data.sql # chỉ định path chưa file data.sql.
 
 server:
   port: 8989
