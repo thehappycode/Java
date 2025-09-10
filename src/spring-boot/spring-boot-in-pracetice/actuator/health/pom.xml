@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.thehappycode</groupId>
-	<artifactId>actuator</artifactId>
+	<artifactId>actuator-health</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>actuator</name>
+	<name>actuator-health</name>
 	<description>Tìm hiểu về Actuator Health trong Spring Boot</description>
 	<url/>
 	<licenses>
