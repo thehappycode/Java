@@ -1,0 +1,52 @@
+spring:
+    application:
+        name: actuator - health
+
+    h2:
+        console:
+            enabled: true        # Bật H2 Console
+            path: /h2-console    # URL truy cập H2
+    datasource:
+        url: jdbc:h2:mem:testdb
+        driverClassName: org.h2.Driver
+        username: sa
+        password: password
+        # Để schema tự tạo từ entity
+        hikari:
+            maximum-pool-size: 5
+
+
+server:
+    port: 8989
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: 
+                    - "*"
+                    # - beans
+                    # - threaddump
+            # Custom path. Mặc định là /actuator
+            # base-path: /thehappycode
+            # Custom path-mapping.
+            # path-mapping:
+                # health: application-health
+    # Custom port truy cập actuator. Mặc định là lấy port applicaton.
+    # server:
+        # port: 8990
+    endpoint:      
+        health:
+            show-details: always
+            status:
+                order:
+                    - FATAL
+                    - DOWN
+                    - OUT-OF-SERVICE
+                    - UNKNOWN
+                    - UP
+                http-mapping:
+                    down: 500
+                    out_of_service: 503
+
+
