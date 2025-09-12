@@ -1,0 +1,37 @@
+spring:
+    application:
+          name: actuator-metrics
+
+    sql:
+        init:
+            mode: embedded
+    datasource:
+        url: jdbc:h2:mem:h2db
+        driverClassName: org.h2.Driver
+        username: sa
+        password: password
+    h2:
+        console:
+            enabled: true
+    jpa:
+        hibernate:
+            ddl-auto: none
+
+server:
+    port: 8989
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: 
+                    - "*"
+    info:
+        env:
+            enabled: true
+
+    metrics:
+        export:
+            defaults:
+                enabled: false
+

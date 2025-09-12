@@ -1,0 +1,47 @@
+spring:
+    application:
+          name: actuator-info
+
+    sql:
+        init:
+            mode: embedded
+    datasource:
+        url: jdbc:h2:mem:h2db
+        driverClassName: org.h2.Driver
+        username: sa
+        password: password
+    h2:
+        console:
+            enabled: true
+    jpa:
+        hibernate:
+            ddl-auto: none
+
+server:
+    port: 8989
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: 
+                    - "*"
+    info:
+        env:
+            enabled: true
+
+info: # Các thuộc tính bên dưới do người dùng định nghĩa
+    app:
+        name: Spring Boot Actuator Info application
+        description: Spring Boot application that explores the /info endpoint
+        version: 1.0.0
+        
+    build:
+        artifact: @project.artifactId@
+        name: @project.name@
+        description: @project.description@
+        version: @project.version@
+    properties:
+        java:
+            version: @java.version@
+    custom: thehappycode
