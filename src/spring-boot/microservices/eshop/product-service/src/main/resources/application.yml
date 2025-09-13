@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: product-service
+  data:
+    mongodb:
+      # Sử dụng khi mongodb có cài đặt user/pass.
+      # uri: mongodb://<username>:<password>@localhost:27017/product-service?authSource=admin
+      uri: mongodb://localhost:27017/product-service
+
+server:
+  port: 8980
