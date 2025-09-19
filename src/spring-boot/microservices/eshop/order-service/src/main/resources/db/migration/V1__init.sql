@@ -1,5 +1,5 @@
 
-CREATE TABLE `orders`
+CREATE TABLE `t_order`
 (
     `id`            BIGINT(20) NOT NULL AUTO_INCREMENT,
     `order_number`   VARCHAR(255) DEFAULT NULL,
