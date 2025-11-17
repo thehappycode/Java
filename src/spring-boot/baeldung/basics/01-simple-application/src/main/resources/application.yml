@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Bootstrap Spring Boot 
+  thymeleaf:
+    cache: false
+    enable: true
+    prefix: classpath:/templates/
+    suffix: .html
+
+
+server:
+  port: 8989
+
+
