@@ -4,7 +4,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.1.7'
 }
 
-group = 'thehappycode.microservices.core.recommendation'
+group = 'thehappycode.api'
 version = '1.0.0-SNAPSHOT'
 description = 'Demo project for Spring Boot'
 
@@ -14,18 +14,20 @@ java {
 	}
 }
 
-jar {
+bootJar {
     enabled = false
 }
+
+jar {
+    enabled = true
+}
+
 
 repositories {
 	mavenCentral()
 }
 
 dependencies {
-	implementation project(':api')
-	implementation project(':util')
-
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
