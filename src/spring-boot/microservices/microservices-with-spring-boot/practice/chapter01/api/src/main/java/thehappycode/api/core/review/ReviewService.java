@@ -1,4 +1,4 @@
-package thehappycode.api.core.product;
+package thehappycode.api.core.review;
 
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;

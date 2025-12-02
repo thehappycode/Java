@@ -1,4 +1,4 @@
-package thehappycode.api.core.product;
+package thehappycode.api.core.recommendation;
 
 public class Recommendation {
     private final int productId;
