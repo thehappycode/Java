@@ -15,15 +15,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
-import se.magnus.api.core.product.Product;
-import se.magnus.api.core.product.ProductService;
-import se.magnus.api.core.recommendation.Recommendation;
-import se.magnus.api.core.recommendation.RecommendationService;
-import se.magnus.api.core.review.Review;
-import se.magnus.api.core.review.ReviewService;
-import se.magnus.api.exceptions.InvalidInputException;
-import se.magnus.api.exceptions.NotFoundException;
-import se.magnus.util.http.HttpErrorInfo;
+import thehappycode.api.core.product.Product;
+import thehappycode.api.core.product.ProductService;
+import thehappycode.api.core.recommendation.Recommendation;
+import thehappycode.api.core.recommendation.RecommendationService;
+import thehappycode.api.core.review.Review;
+import thehappycode.api.core.review.ReviewService;
+import thehappycode.api.exceptions.InvalidInputException;
+import thehappycode.api.exceptions.NotFoundException;
+import thehappycode.util.http.HttpErrorInfo;
 
 @Component
 public class ProductCompositeIntegration implements ProductService, RecommendationService, ReviewService {
